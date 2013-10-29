@@ -1,0 +1,6 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: comfy_demo_dev
+  pool: 5
+  password:
