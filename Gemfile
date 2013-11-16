@@ -3,7 +3,7 @@ source 'http://rubygems.org'
 gem 'rails', '4.0.0'
 
 gem 'pg'
-gem 'comfortable_mexican_sofa'
+gem 'comfortable_mexican_sofa', '1.11.0'
 
 group :assets do
   gem 'uglifier'

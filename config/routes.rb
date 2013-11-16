@@ -1,8 +1,8 @@
 ComfyDemo::Application.routes.draw do
-  ComfortableMexicanSofa::Routing.admin :path => '/admin'
+   comfy_route :cms_admin, :path => '/admin'
 
   # Make sure this routeset is defined last
-  ComfortableMexicanSofa::Routing.content :path => '/', :sitemap => false
+   comfy_route :cms, :path => '/', :sitemap => false
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

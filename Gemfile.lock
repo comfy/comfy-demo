@@ -43,7 +43,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.3)
-    comfortable_mexican_sofa (1.10.3)
+    comfortable_mexican_sofa (1.11.0)
       active_link_to (>= 1.0.0)
       codemirror-rails (>= 3.0.0)
       coffee-rails (>= 3.1.0)
@@ -60,7 +60,7 @@ GEM
     execjs (2.0.2)
     formatted_form (2.1.2)
       rails (>= 3.1)
-    haml (4.0.3)
+    haml (4.0.4)
       tilt
     haml-rails (0.4)
       actionpack (>= 3.1, < 4.1)
@@ -136,7 +136,7 @@ GEM
       polyglot
       polyglot (>= 0.3.1)
     tzinfo (0.3.38)
-    uglifier (2.3.0)
+    uglifier (2.3.1)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
 
@@ -144,7 +144,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  comfortable_mexican_sofa
+  comfortable_mexican_sofa (= 1.11.0)
   execjs
   pg
   rails (= 4.0.0)
