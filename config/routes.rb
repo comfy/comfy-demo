@@ -1,8 +1,13 @@
 ComfyDemo::Application.routes.draw do
-   comfy_route :cms_admin, :path => '/admin'
+  
+  namespace :admin do
+    resources :scaffold_models
+  end
+
+  comfy_route :cms_admin, :path => '/admin'
 
   # Make sure this routeset is defined last
-   comfy_route :cms, :path => '/', :sitemap => false
+  comfy_route :cms, :path => '/', :sitemap => false
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
