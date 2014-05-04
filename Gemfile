@@ -1,9 +1,9 @@
 source 'http://rubygems.org'
 
-gem 'rails', '4.0.4'
+gem 'rails', '4.1.0'
 
 gem 'pg'
-gem 'comfortable_mexican_sofa', '1.11.2'
+gem 'comfortable_mexican_sofa', :github => 'comfy/comfortable-mexican-sofa'
 
 group :assets do
   gem 'uglifier'

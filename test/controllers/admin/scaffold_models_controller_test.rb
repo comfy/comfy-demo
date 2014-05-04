@@ -3,7 +3,7 @@ require_relative '../../test_helper'
 class Admin::ScaffoldModelsControllerTest < ActionController::TestCase
 
   def setup
-    ::Cms::Site.create!(
+    Comfy::Cms::Site.create!(
       :label      => 'Test Site',
       :identifier => 'tst',
       :hostname   => 'tst.test'

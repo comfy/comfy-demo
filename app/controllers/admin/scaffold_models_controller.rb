@@ -1,4 +1,4 @@
-class Admin::ScaffoldModelsController < Admin::Cms::BaseController
+class Admin::ScaffoldModelsController < Comfy::Admin::Cms::BaseController
 
   before_action :build_scaffold_model,  :only => [:new, :create]
   before_action :load_scaffold_model,   :only => [:show, :edit, :update, :destroy]
