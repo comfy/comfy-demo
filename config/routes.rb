@@ -4,8 +4,10 @@ ComfyDemo::Application.routes.draw do
     resources :scaffold_models
   end
 
+  comfy_route :blog_admin, :path => '/admin'
   comfy_route :cms_admin, :path => '/admin'
 
+  comfy_route :blog, :path => '/blog'
   # Make sure this routeset is defined last
   comfy_route :cms, :path => '/', :sitemap => false
 
