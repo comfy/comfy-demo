@@ -1,3 +1,31 @@
+GIT
+  remote: git://github.com/comfy/comfortable-mexican-sofa.git
+  revision: bed05d41656add1953bf48d528773a906143e87a
+  specs:
+    comfortable_mexican_sofa (1.12.0)
+      active_link_to (>= 1.0.0)
+      bootstrap-sass (~> 3.1.0)
+      bootstrap_form (~> 2.1.1)
+      codemirror-rails (>= 3.0.0)
+      coffee-rails (>= 3.1.0)
+      haml-rails (>= 0.3.0)
+      jquery-rails (>= 3.0.0)
+      jquery-ui-rails (>= 4.0.0)
+      kaminari (>= 0.14.0)
+      kramdown (>= 1.0.0)
+      paperclip (>= 3.4.0)
+      rails (~> 4.0)
+      rails-i18n (~> 4.0.0)
+      sass-rails (>= 4.0.3)
+      tinymce-rails (>= 4.0.0)
+
+GIT
+  remote: git://github.com/comfy/comfy-blog.git
+  revision: 66e9017abea24b48541f73d13bd21e848baf2385
+  specs:
+    comfy_blog (1.12.0)
+      comfortable_mexican_sofa (~> 1.12.0)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -47,24 +75,6 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.7.0)
-    comfortable_mexican_sofa (1.12.0)
-      active_link_to (>= 1.0.0)
-      bootstrap-sass (~> 3.1.0)
-      bootstrap_form (~> 2.1.1)
-      codemirror-rails (>= 3.0.0)
-      coffee-rails (>= 3.1.0)
-      haml-rails (>= 0.3.0)
-      jquery-rails (>= 3.0.0)
-      jquery-ui-rails (>= 4.0.0)
-      kaminari (>= 0.14.0)
-      kramdown (>= 1.0.0)
-      paperclip (>= 3.4.0)
-      rails (~> 4.0)
-      rails-i18n (~> 4.0.0)
-      sass-rails (>= 4.0.3)
-      tinymce-rails (>= 4.0.0)
-    comfy_blog (1.12.0)
-      comfortable_mexican_sofa (~> 1.12.0)
     erubis (2.7.0)
     execjs (2.0.2)
     haml (4.0.5)
@@ -159,8 +169,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  comfortable_mexican_sofa (= 1.12.0)
-  comfy_blog (= 1.12.0)
+  comfortable_mexican_sofa!
+  comfy_blog!
   execjs
   pg
   rails (= 4.1.0)
