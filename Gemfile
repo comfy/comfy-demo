@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '4.1.0'
+gem 'rails', '~> 4.1.0'
 
 gem 'pg'
 gem 'comfortable_mexican_sofa', :github => 'comfy/comfortable-mexican-sofa'
