@@ -1,5 +1,5 @@
 ComfyDemo::Application.routes.draw do
-  
+
   namespace :admin do
     resources :scaffold_models
   end
@@ -51,7 +51,7 @@ ComfyDemo::Application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
-  
+
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'
