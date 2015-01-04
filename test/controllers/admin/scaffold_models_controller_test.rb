@@ -9,7 +9,7 @@ class Admin::ScaffoldModelsControllerTest < ActionController::TestCase
       :hostname   => 'tst.test'
     )
     @request.env['HTTP_AUTHORIZATION'] = "Basic #{Base64.encode64('username:password')}"
-    
+
     @scaffold_model = scaffold_models(:default)
   end
 
@@ -39,7 +39,7 @@ class Admin::ScaffoldModelsControllerTest < ActionController::TestCase
     assert_response :success
     assert assigns(:scaffold_model)
     assert_template :new
-    assert_select 'form[action=/admin/scaffold_models]'
+    assert_select "form[action='/admin/scaffold_models']"
   end
 
   def test_get_edit
@@ -47,7 +47,7 @@ class Admin::ScaffoldModelsControllerTest < ActionController::TestCase
     assert_response :success
     assert assigns(:scaffold_model)
     assert_template :edit
-    assert_select "form[action=/admin/scaffold_models/#{@scaffold_model.id}]"
+    assert_select "form[action='/admin/scaffold_models/#{@scaffold_model.id}']"
   end
 
   def test_creation

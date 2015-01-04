@@ -1,0 +1,19 @@
+.jumbotron
+  %p.lead
+    ComfortableMexicanSofa is a CMS Engine for Rails 4 apps
+
+- cache 'releases', :expires_in => 1.day  do
+  .releases
+    - github = Github.new
+    - releases = github.repos.releases.list 'comfy', 'comfortable-mexican-sofa'
+    - releases.sort_by{|r| r.created_at}.reverse.each do |release|
+      .release
+        %h4
+          %span.version
+            = link_to release.name, release.html_url, :target => '_blank'
+          %span.date
+            = release.created_at.to_date.to_s(:long)
+        .body
+          - markdown = github.markdown.render :text => release.body
+          = preserve do
+            = markdown.body.html_safe
