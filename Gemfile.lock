@@ -1,8 +1,8 @@
 GIT
   remote: git://github.com/comfy/comfortable-mexican-sofa.git
-  revision: e79638d36a9be42e976801321b4335d3c3723f3d
+  revision: fa1465eed6b4ac598935c3abe837b7425d8c71ae
   specs:
-    comfortable_mexican_sofa (1.12.3)
+    comfortable_mexican_sofa (1.12.5)
       active_link_to (>= 1.0.0)
       bootstrap-sass (>= 3.2.0)
       bootstrap_form (>= 2.2.0)
@@ -17,13 +17,12 @@ GIT
       rails (>= 4.0.0, < 5)
       rails-i18n (>= 4.0.0)
       sass-rails (>= 4.0.3)
-      tinymce-rails (>= 4.0.0)
 
 GIT
   remote: git://github.com/comfy/comfy-blog.git
-  revision: f79e455a7c499ba01041d98eb37b3485fb34dfa4
+  revision: 59cd0bb3cd55a7e9981044423e22aed25fcfb567
   specs:
-    comfy_blog (1.12.1)
+    comfy_blog (1.12.2)
       comfortable_mexican_sofa (~> 1.12.0)
 
 GEM
@@ -90,7 +89,7 @@ GEM
       thread_safe (~> 0.3, >= 0.3.1)
     erubis (2.7.0)
     execjs (2.2.2)
-    faraday (0.9.0)
+    faraday (0.9.1)
       multipart-post (>= 1.2, < 3)
     github_api (0.12.2)
       addressable (~> 2.3)
@@ -104,7 +103,7 @@ GEM
       activesupport (>= 4.1.0)
     haml (4.1.0.beta.1)
       tilt
-    haml-rails (0.6.0)
+    haml-rails (0.7.0)
       actionpack (>= 4.0.1)
       activesupport (>= 4.0.1)
       haml (>= 3.1, < 5.0)
@@ -125,7 +124,7 @@ GEM
       thor (>= 0.14, < 2.0)
     jquery-ui-rails (5.0.3)
       railties (>= 3.2.16)
-    json (1.8.1)
+    json (1.8.2)
     jwt (1.2.0)
     kaminari (0.16.1)
       actionpack (>= 3.0.0)
@@ -137,7 +136,7 @@ GEM
       mime-types (>= 1.16, < 3)
     mime-types (2.4.3)
     mini_portile (0.6.2)
-    minitest (5.5.0)
+    minitest (5.5.1)
     multi_json (1.10.1)
     multi_xml (0.5.5)
     multipart-post (2.0.0)
@@ -158,7 +157,7 @@ GEM
     plupload-rails (1.2.1)
       rails (>= 3.1)
     rack (1.6.0)
-    rack-test (0.6.2)
+    rack-test (0.6.3)
       rack (>= 1.0)
     rails (4.2.0)
       actionmailer (= 4.2.0)
@@ -195,14 +194,14 @@ GEM
     rake (10.4.2)
     ruby_parser (3.1.3)
       sexp_processor (~> 4.1)
-    sass (3.4.9)
+    sass (3.4.10)
     sass-rails (5.0.1)
       railties (>= 4.0.0, < 5.0)
       sass (~> 3.1)
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
       tilt (~> 1.1)
-    sexp_processor (4.4.4)
+    sexp_processor (4.4.5)
     sprockets (2.12.3)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -215,11 +214,9 @@ GEM
     thor (0.19.1)
     thread_safe (0.3.4)
     tilt (1.4.1)
-    tinymce-rails (4.1.6)
-      railties (>= 3.1.1)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
-    uglifier (2.6.1)
+    uglifier (2.7.0)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
 
