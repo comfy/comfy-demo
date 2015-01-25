@@ -1,8 +1,8 @@
 GIT
   remote: git://github.com/comfy/comfortable-mexican-sofa.git
-  revision: fa1465eed6b4ac598935c3abe837b7425d8c71ae
+  revision: b054b8f94a075e861efef82c7177a6414925c8ef
   specs:
-    comfortable_mexican_sofa (1.12.5)
+    comfortable_mexican_sofa (1.12.7)
       active_link_to (>= 1.0.0)
       bootstrap-sass (>= 3.2.0)
       bootstrap_form (>= 2.2.0)
@@ -20,10 +20,10 @@ GIT
 
 GIT
   remote: git://github.com/comfy/comfy-blog.git
-  revision: 59cd0bb3cd55a7e9981044423e22aed25fcfb567
+  revision: 7ce15bef83e7a8eacd7a076f9171288cd407770e
   specs:
-    comfy_blog (1.12.2)
-      comfortable_mexican_sofa (~> 1.12.0)
+    comfy_blog (1.12.3)
+      comfortable_mexican_sofa (>= 1.12.7)
 
 GEM
   remote: http://rubygems.org/
@@ -67,8 +67,12 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.3.6)
     arel (6.0.0)
-    bootstrap-sass (3.3.1.0)
-      sass (~> 3.2)
+    autoprefixer-rails (5.0.0.3)
+      execjs
+      json
+    bootstrap-sass (3.3.3)
+      autoprefixer-rails (>= 5.0.0.1)
+      sass (>= 3.2.19)
     bootstrap_form (2.2.0)
     builder (3.2.2)
     climate_control (0.0.3)
@@ -101,7 +105,7 @@ GEM
       oauth2
     globalid (0.3.0)
       activesupport (>= 4.1.0)
-    haml (4.1.0.beta.1)
+    haml (4.0.6)
       tilt
     haml-rails (0.7.0)
       actionpack (>= 4.0.1)
@@ -111,12 +115,11 @@ GEM
       railties (>= 4.0.1)
     hashie (3.3.2)
     hike (1.2.3)
-    hpricot (0.8.6)
-    html2haml (1.0.1)
+    html2haml (2.0.0)
       erubis (~> 2.7.0)
-      haml (>= 4.0.0.rc.1)
-      hpricot (~> 0.8.6)
-      ruby_parser (~> 3.1.1)
+      haml (~> 4.0.0)
+      nokogiri (~> 1.6.0)
+      ruby_parser (~> 3.5)
     i18n (0.7.0)
     jquery-rails (4.0.3)
       rails-dom-testing (~> 1.0)
@@ -125,7 +128,7 @@ GEM
     jquery-ui-rails (5.0.3)
       railties (>= 3.2.16)
     json (1.8.2)
-    jwt (1.2.0)
+    jwt (1.2.1)
     kaminari (0.16.1)
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
@@ -140,7 +143,7 @@ GEM
     multi_json (1.10.1)
     multi_xml (0.5.5)
     multipart-post (2.0.0)
-    nokogiri (1.6.5)
+    nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
     oauth2 (1.0.0)
       faraday (>= 0.8, < 0.10)
@@ -192,7 +195,7 @@ GEM
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     rake (10.4.2)
-    ruby_parser (3.1.3)
+    ruby_parser (3.6.4)
       sexp_processor (~> 4.1)
     sass (3.4.10)
     sass-rails (5.0.1)
@@ -207,7 +210,7 @@ GEM
       multi_json (~> 1.0)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
-    sprockets-rails (2.2.2)
+    sprockets-rails (2.2.4)
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (>= 2.8, < 4.0)
