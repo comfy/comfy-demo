@@ -2,7 +2,7 @@
   %p.lead
     ComfortableMexicanSofa is a CMS Engine for Rails 4 apps
 
-- cache 'releases', :expires_in => 1.day  do
+- cache 'releases', :expires_in => 1.hour  do
   .releases
     - github = Github.new
     - releases = github.repos.releases.list 'comfy', 'comfortable-mexican-sofa'
