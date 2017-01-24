@@ -1,14 +1,8 @@
-ComfyDemo::Application.routes.draw do
+Rails.application.routes.draw do
+  comfy_route :cms_admin, :path => '/admin'
 
-  namespace :admin do
-    resources :scaffold_models
-  end
+  # Make sure this routeset is defined last
+  comfy_route :cms, :path => '/', :sitemap => false
 
-  root :to => 'landing#show'
-
-  comfy_route :blog_admin,  :path => '/admin'
-  comfy_route :cms_admin,   :path => '/admin'
-
-  comfy_route :blog,        :path => '/blog'
-  comfy_route :cms,         :path => '/demo', :sitemap => false
+  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
