@@ -1,24 +1,19 @@
-# README
+# Comfy Demo App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Installation and Configuration:
 
-Things you may want to cover:
+There are the steps that were done to create this demo app.
 
-* Ruby version
+### Step 1:
 
-* System dependencies
+* Add required gems in [Gemfile](todo)
+* Run `rails active_storage:install` to pull in ActiveStorage migration
+* Run `rails g comfy:cms` to pull in CMS migration, routes and initializer
+* Run migrations: `rake db:migrate`
+* Start the server: `rails s`
+* Navigate to http://localhost:3000/admin
+* Log in with default credentials: u: `username`, p: `password`
 
-* Configuration
+### Step 2:
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* TODO
