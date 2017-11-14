@@ -4,7 +4,7 @@ This is a simple demo app that has ComfortableMexicanSofa installed, configured
 and extended. You should be able to recreate everything by creating a fresh
 Rails app and following these steps.
 
-### Step 1: Installation.
+### Step 1: Installation
 
 * Add required gems to [Gemfile](https://github.com/comfy/comfy-demo/blob/master/Gemfile#L59)
 * Run `rails active_storage:install` to pull in ActiveStorage migration
@@ -14,7 +14,7 @@ Rails app and following these steps.
 * Navigate to http://localhost:3000/admin
 * Log in with default credentials: u: `username`, p: `password`
 
-### Step 2: Hello World.
+### Step 2: Hello World
 
 Create a Site. Comfy is a multi-site capable CMS, but for now we only need to
 worry about one. Put "Demo" as a **Label** and **Indentifier** should
@@ -22,7 +22,12 @@ auto-populate to "demo". Site will be created and you'll be redirected to
 the Layout creation view.
 
 Let's create a *layout*. Set **Layout Name** to "main". **Identifier** should
-auto-populate. Leave **Content** populated with `{{cms::wysiwyg content}}`.
+auto-populate. Leave **Content** populated with:
+
+```html
+{{cms::wysiwyg content}}
+```
+
 This just indicates that pages using this layout will have a single text field
 via Wysiwyg HTML editor. Don't worry about **Stylesheet** and **Javascript**
 just yet. After creating your first Layout navigate to **Pages** section via
@@ -34,14 +39,14 @@ like "Hello World" in the **Content** field and hit **Create Page**.
 Now you have some content that's ready to be served. Navigate to
 http://localhost:3000/ and you should see your text.
 
-### Step 3: Basic Configuration.
+### Step 3: Basic Configuration
 
 Open [/config/initializers/comfortable_mexican_sofa.rb](/config/initializers/comfortable_mexican_sofa.rb)
 and change default username and password. This initializer allows to configure
 things that are relevant to your app. You may utilize authentication provided by
 Device or whatever you may have in your app. This is the place to set this up.
 
-### Step 4: Hello World with Bootstrap 4.
+### Step 4: Hello World with Bootstrap 4
 
 While we can put entire html structure of the *page* inside *layout*, let's use
 Rails layouts for it: [/app/views/layouts/application.html.erb](/app/views/layouts/application.html.erb)
@@ -58,10 +63,10 @@ variables in the layout, helpers and partials.
 Right now let's set page html title like this:
 
 ```erb
-<title><%= @cms_page.present ? @cms_page.label : "Demo App" %></title>
+<title><%= @cms_page.present? ? @cms_page.label : "Demo App" %></title>
 ```
 
-### Step 6: Layout nesting and more Content Tags.
+### Step 6: Layout nesting and more Content Tags
 
 Let's update *layout* content with something like this:
 
@@ -85,8 +90,8 @@ All *pages* using this *layout* will have appropriate form fields rendered in
 the admin view.
 
 What if we want to have a similar page markup, but with two columns? You can
-actually nest *layouts*. Think of {{ cms:wywiwyg content }} as a conventional
-`yield` in Rails layouts.
+actually nest *layouts*. Think of `{{ cms:wywiwyg content }}` (or any format as
+long as fragment is named "content") as a conventional `yield` in Rails layouts.
 
 Next step is to create a new *layout* that is a child of the existing one. Name
 it "Two Columns". Populate its **content** with something like this:
@@ -108,5 +113,26 @@ it "Two Columns". Populate its **content** with something like this:
 *Pages* using this *layout* will have two column and also jumbotron from the
 parent *layout*
 
-### Step 7: Non-renderable Page Fragments
+### Step 7: Non-renderable Page Fragments and view helpers
+
+There's an option to skip the rendering for some tags. Good example would be
+meta tags that need to be rendered in the Rails layout. Let's add one of those
+tags. You may place them anywhere in the *layout* content.
+
+```html
+{{ cms:text meta-description, render: false }}
+```
+
+Now you may access this via `cms_fragment_content` view helper:
+
+```html
+<meta name="description" content="<%= cms_fragment_content("meta-description") %>">
+```
+
+There are several CMS view helpers you may use in your app:
+
+* `cms_fragment_content` - Raw fragment content
+* `cms_fragment_render` - If fragment content contains more tags, you can expand them
+* `cms_snippet_content` - Raw snippet content
+* `cms_snippet_render` - Use render to expand content with tags
 
