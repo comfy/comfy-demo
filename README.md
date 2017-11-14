@@ -136,3 +136,6 @@ There are several CMS view helpers you may use in your app:
 * `cms_snippet_content` - Raw snippet content
 * `cms_snippet_render` - Use render to expand content with tags
 
+Note: Add `helper Comfy::CmsHelper` to your `ApplicationController` if you
+opted out from auto-loading all view helpers everywhere.
+
