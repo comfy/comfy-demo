@@ -82,7 +82,7 @@ Let's update *layout* content with something like this:
 </main>
 <hr/>
 <footer class="container">
-  &copy; Copyright 2017
+  {{ cms:snippet footer }}
 </footer>
 ```
 
@@ -113,6 +113,11 @@ it "Two Columns". Populate its **content** with something like this:
 *Pages* using this *layout* will have two column and also jumbotron from the
 parent *layout*
 
+Notice the `{{ cms:snippet footer }}`. Snippet is a reusable content that you
+populate once and reuse everywhere. Good example would be copyright notice that
+needs to be at the bottom of all pages. Just create a *snippet* called "footer"
+and populate content with "&copy; Copyright 2017"
+
 ### Step 7: Non-renderable Page Fragments and view helpers
 
 There's an option to skip the rendering for some tags. Good example would be
@@ -139,3 +144,13 @@ There are several CMS view helpers you may use in your app:
 Note: Add `helper Comfy::CmsHelper` to your `ApplicationController` if you
 opted out from auto-loading all view helpers everywhere.
 
+### Step 8: CMS Seed Data
+
+Now you know to structure and populate content. However, during development it's
+not fun to populate content via admin forms and then doing database dumps and
+restores. Never mind the complexity of it if you work in a team of people.
+
+CMS Seed Data allows you to create content in files that can get loaded into
+database automatically.
+
+TODO...
