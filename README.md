@@ -164,4 +164,15 @@ rake 'comfy:cms_seeds:import[sample-site, demo]'
 ```
 
 Where first argument is the folder name where the seeds are, and the second
-argument is the **identifier** of the *site*.
+argument is the **identifier** of the *site*. Be warned that data that is not
+present in those files will be removed from the database.
+
+Alternativery, you can export everything from the database into a folder by
+running
+
+```
+rake 'comfy:cms_seeds:export[demo, sample-site]'
+```
+
+Where first argument is the **identifier** of the *site*, and the second one is
+the name of the seeds folder.

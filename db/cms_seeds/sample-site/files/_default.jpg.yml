@@ -1,5 +1,6 @@
+---
 label: Seed File
 description: Seed File Description
 categories:
-  - category_a
-  - category_b
+- category_a
+- category_b
