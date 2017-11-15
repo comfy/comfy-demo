@@ -187,3 +187,18 @@ updated seed data will be automatically pushed into database.
 The only catch is that both folder name and *site's* **identifier** need to match.
 Also don't push site to production with that enabled by mistake.
 
+*Note:* For demo purposes that setting is off. Enable it to play with seed data.
+
+### Step 9: Reusing Admin area for other CRUDS
+
+Are you starting a new project? You can reuse Comfy's admin area for your admin
+views. All you need to do is inherit your controller from `Comfy::Admin::Cms::BaseController`.
+
+You may use provided scaffold generator to quickly spin up CRUDS. For example:
+
+```
+rails g comfy:scaffold Shoe name:string color:string
+```
+
+You'll get models, migration, controllers, views, and also model and controller
+tests. Fill in the missing bits and you'll have fully functional admin section.
