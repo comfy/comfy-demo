@@ -141,7 +141,7 @@ There are several CMS view helpers you may use in your app:
 * `cms_snippet_content` - Raw snippet content
 * `cms_snippet_render` - Use render to expand content with tags
 
-Note: Add `helper Comfy::CmsHelper` to your `ApplicationController` if you
+**Note:** Add `helper Comfy::CmsHelper` to your `ApplicationController` if you
 opted out from auto-loading all view helpers everywhere.
 
 ### Step 8: CMS Seed Data
@@ -153,4 +153,15 @@ restores. Never mind the complexity of it if you work in a team of people.
 CMS Seed Data allows you to create content in files that can get loaded into
 database automatically.
 
-TODO...
+When you installed CMS you probably noticed that [/db/seeds](/db/cms_seeds)
+directory was created. It contains an example of how seed data files are structured.
+
+Those files will represent structure and content of your site. To import them into
+database use rake task
+
+```
+rake 'comfy:cms_seeds:import[sample-site, demo]'
+```
+
+Where first argument is the folder name where the seeds are, and the second
+argument is the **identifier** of the *site*.

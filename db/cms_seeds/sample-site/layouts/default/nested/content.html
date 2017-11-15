@@ -1,14 +1,19 @@
 [attributes]
-label: Nested Seed Layout
-position: 42
+label: Two Columns Layout
+app_layout: application
 
 [content]
-{{ cms:file thumbnail }}
-<div class="left">{{ cms:markdown left }}</div>
-<div class="right">{{ cms:markdown right }}</div>
+<div class="row">
+  <div class="col-md-6">
+    <h2>{{ cms:text left-col-title }}</h2>
+    <p>{{ cms:markdown left-col-text }}</p>
+  </div>
+  <div class="col-md-6">
+    <h2>{{ cms:text right-col-title }}</h2>
+    <p>{{ cms:markdown right-col-text }}</p>
+  </div>
+</div>
 
 [js]
-// nested js
 
 [css]
-div{float:left}

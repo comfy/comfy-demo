@@ -1,16 +1,24 @@
 [attributes]
-label: Default Seed Layout
+label: Main Layout
+app_layout: application
 
 [content]
-<html>
-  <body>
-    {{ cms:file header, as: image }}
-    {{ cms:markdown content }}
-  </body>
-</html>
+{{ cms:text meta-description, render: false }}
+
+<div class="jumbotron">
+  <div class="container">
+    <h1>{{ cms:text jumbotron-title }}</h1>
+    <p>{{ cms:text jumbotron-text }}</p>
+  </div>
+</div>
+<main class="container">
+  {{ cms:wysiwyg content }}
+</main>
+<hr/>
+<footer class="container">
+  &copy; Copyright 2017
+</footer>
 
 [js]
-// default js
 
 [css]
-body{color: red}

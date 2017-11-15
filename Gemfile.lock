@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/GBH/rails.git
-  revision: 64d426b41689c71bcbf814ac9857cf15bdaaca2c
+  revision: 7441e1e8bf36ca86a6c9a64de40223e1b5bb9ab2
   branch: active-storage-routes-prepend
   specs:
     actioncable (5.2.0.alpha)
@@ -34,7 +34,7 @@ GIT
     activerecord (5.2.0.alpha)
       activemodel (= 5.2.0.alpha)
       activesupport (= 5.2.0.alpha)
-      arel (= 9.0.0.alpha)
+      arel (>= 9.0)
     activestorage (5.2.0.alpha)
       actionpack (= 5.2.0.alpha)
       activerecord (= 5.2.0.alpha)
@@ -72,7 +72,7 @@ GIT
 
 GIT
   remote: https://github.com/comfy/comfortable-mexican-sofa.git
-  revision: cd3371b214c85c70bd178bf79137682bfe66ade8
+  revision: 6ce33da110d00db09e68548835981911899d59a0
   specs:
     comfortable_mexican_sofa (2.0.0.beta3)
       active_link_to (>= 1.0.0)
@@ -92,9 +92,9 @@ GIT
 
 GIT
   remote: https://github.com/rails/arel.git
-  revision: b0ad8046091ce45a20fc7a5cb68b4599f876bbbb
+  revision: 8f1db57f2d0f7d2cbb407f2c141dfd61ba8a599b
   specs:
-    arel (9.0.0.alpha)
+    arel (9.0.0)
 
 GEM
   remote: https://rubygems.org/
@@ -115,7 +115,7 @@ GEM
       sass (>= 3.5.2)
     builder (3.2.3)
     byebug (9.1.0)
-    capybara (2.15.4)
+    capybara (2.16.0)
       addressable
       mini_mime (>= 0.1.3)
       nokogiri (>= 1.3.3)
@@ -134,7 +134,7 @@ GEM
       execjs
     coffee-script-source (1.12.2)
     concurrent-ruby (1.0.5)
-    crass (1.0.2)
+    crass (1.0.3)
     erubi (1.7.0)
     erubis (2.7.0)
     execjs (2.7.0)
@@ -217,7 +217,7 @@ GEM
     rails-i18n (5.0.4)
       i18n (~> 0.7)
       railties (~> 5.0)
-    rake (12.2.1)
+    rake (12.3.0)
     rb-fsevent (0.10.2)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
@@ -230,7 +230,7 @@ GEM
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
-    sass-rails (5.0.6)
+    sass-rails (5.0.7)
       railties (>= 4.0.0, < 6)
       sass (~> 3.1)
       sprockets (>= 2.8, < 4.0)
