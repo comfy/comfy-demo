@@ -176,3 +176,12 @@ rake 'comfy:cms_seeds:export[demo, sample-site]'
 
 Where first argument is the **identifier** of the *site*, and the second one is
 the name of the seeds folder.
+
+During development it would be pretty annoying to run rake task everytime you
+do a content change. This is why there's `config.enable_seeds` that is found
+inside initializer. Set it to `true` and restart server. Now with each request
+updated seed data will be automatically pushed into database.
+
+The only catch is that both folder name and *site's* **identifier** need to match.
+Also don't push site to production with that enabled by mistake.
+
