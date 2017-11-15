@@ -104,7 +104,7 @@ it "Two Columns". Populate its **content** with something like this:
   </div>
   <div class="col-md-6">
     <h2>{{ cms:text right-col-title }}</h2>
-    <p>{{ cms:markdown right-col-text }}</p>
+    <p>{{ cms:file demo-image, as: image }}</p>
   </div>
 </div>
 
@@ -117,6 +117,8 @@ Notice the `{{ cms:snippet footer }}`. Snippet is a reusable content that you
 populate once and reuse everywhere. Good example would be copyright notice that
 needs to be at the bottom of all pages. Just create a *snippet* called "footer"
 and populate content with "&copy; Copyright 2017"
+
+**TODO** Update WIKI and link to documentation on all the tags
 
 ### Step 7: Non-renderable Page Fragments and view helpers
 
@@ -146,8 +148,8 @@ opted out from auto-loading all view helpers everywhere.
 
 ### Step 8: CMS Seed Data
 
-Now you know to structure and populate content. However, during development it's
-not fun to populate content via admin forms and then doing database dumps and
+Now you know how to structure and populate content. However, during development
+it's not fun to populate content via admin forms and then doing database dumps and
 restores. Never mind the complexity of it if you work in a team of people.
 
 CMS Seed Data allows you to create content in files that can get loaded into
