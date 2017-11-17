@@ -72,7 +72,7 @@ GIT
 
 GIT
   remote: https://github.com/comfy/comfortable-mexican-sofa.git
-  revision: 591f59bf267580a7b112168f35e04c10880c508d
+  revision: be2372eb9b3571174f0ceb44aee3c5e8dbdfcdab
   specs:
     comfortable_mexican_sofa (2.0.0.beta3)
       active_link_to (>= 1.0.0)
@@ -209,6 +209,10 @@ GEM
     rack (2.0.3)
     rack-test (0.7.0)
       rack (>= 1.0, < 3)
+    rails-controller-testing (1.0.2)
+      actionpack (~> 5.x, >= 5.0.1)
+      actionview (~> 5.x, >= 5.0.1)
+      activesupport (~> 5.x)
     rails-dom-testing (2.0.3)
       activesupport (>= 4.2.0)
       nokogiri (>= 1.6)
@@ -291,6 +295,7 @@ DEPENDENCIES
   listen (>= 3.0.5, < 3.2)
   puma (~> 3.7)
   rails!
+  rails-controller-testing
   sass-rails (~> 5.0)
   selenium-webdriver
   spring

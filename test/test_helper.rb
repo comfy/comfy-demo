@@ -1,3 +1,6 @@
+# without setting this Sublime runs tests in development mode
+ENV['RAILS_ENV'] = 'test'
+
 require_relative '../config/environment'
 require 'rails/test_help'
 

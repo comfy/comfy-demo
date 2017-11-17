@@ -1,0 +1,21 @@
+.page-header
+  = link_to 'New Shoe', new_admin_shoe_path, class: 'btn btn-secondary pull-right'
+  %h2= 'Shoes'
+
+= paginate @shoes, theme: 'comfy'
+
+%ul.list
+  - @shoes.each do |shoe|
+    %li
+      .row
+        .col-md-8.item
+          .item-content
+            .item-title
+              = shoe.name
+
+        .col-md-4.d-flex.align-items-center.justify-content-md-end
+          .btn-group.btn-group-sm
+            = link_to 'Edit', edit_admin_shoe_path(shoe), class: 'btn btn-outline-secondary'
+            = link_to 'Delete', admin_shoe_path(shoe), method: :delete, data: {confirm: 'Are you sure?'}, class: 'btn btn-danger'
+
+= paginate @shoes, theme: 'comfy'

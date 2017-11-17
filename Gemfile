@@ -56,7 +56,7 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-# COMFY Related gems -----------------------------------------------------------
+# ComfortableMexicanSofa Related gems -------------------------------------------
 gem "comfortable_mexican_sofa",
   github: "comfy/comfortable-mexican-sofa"
 gem "rails",
@@ -68,3 +68,8 @@ gem "bootstrap_form",
   github: "bootstrap-ruby/rails-bootstrap-forms",
   branch: "bootstrap-v4"
 gem "kaminari"
+
+group :test do
+  # Comfy controller test generators use `assigns` helper
+  gem "rails-controller-testing"
+end
