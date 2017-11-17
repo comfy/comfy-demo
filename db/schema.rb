@@ -144,6 +144,8 @@ ActiveRecord::Schema.define(version: 2017_11_17_194420) do
     t.string "label", null: false
     t.text "content_cache", limit: 16777215
     t.boolean "is_published", default: true, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.index ["is_published"], name: "index_comfy_cms_translations_on_is_published"
     t.index ["locale"], name: "index_comfy_cms_translations_on_locale"
     t.index ["page_id"], name: "index_comfy_cms_translations_on_page_id"

@@ -189,7 +189,25 @@ Also don't push site to production with that enabled by mistake.
 
 *Note:* For demo purposes that setting is off. Enable it to play with seed data.
 
-### Step 9: Reusing Admin area for other CRUDS
+### Step 9: Page Translations
+
+After importing CMS Seeds you probably noticed that Homepage has a French
+translation. The way you populate content there should be pretty obvious already.
+How is it being served though? Process of serving localized content goes through
+steps found here: [content_controller.rb](https://github.com/comfy/comfortable-mexican-sofa/blob/master/app/controllers/comfy/cms/content_controller.rb#L51)
+
+For this demo app we have a simple control to switch locales
+in [application_controller.rb](/app/controllers/application_controller.rb)
+
+So visiting http://localhost:3000?locale=fr should serve translated content
+
+You can also modify content serving route to look something like this:
+
+```ruby
+comfy_route :cms, path: "/:locale/"
+```
+
+### Step 10: Reusing Admin area for other CRUDS
 
 Are you starting a new project? You can reuse Comfy's admin area for your admin
 views. All you need to do is inherit your controller from `Comfy::Admin::Cms::BaseController`.
