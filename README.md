@@ -1,4 +1,4 @@
-# Comfy Demo App
+# Comfy Demo App [![Build Status](https://img.shields.io/travis/comfy/comfy-demo.svg?branch=master&style=flat)](https://travis-ci.org/comfy/comfy-demo)
 
 This is a simple demo app that has ComfortableMexicanSofa installed, configured
 and extended. You should be able to recreate everything by creating a fresh

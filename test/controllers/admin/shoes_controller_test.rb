@@ -3,11 +3,11 @@ require_relative '../../test_helper'
 class Admin::ShoesControllerTest < ActionDispatch::IntegrationTest
 
   setup do
-    # TODO: login as admin user
     @shoe = shoes(:default)
   end
 
   # Vanilla CMS has BasicAuth, so we need to send that with each request.
+  # Change this to fit your app's authentication strategy
   def r(verb, path, options = {})
     headers = options[:headers] || {}
     headers['HTTP_AUTHORIZATION'] =
