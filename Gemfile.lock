@@ -72,7 +72,7 @@ GIT
 
 GIT
   remote: https://github.com/comfy/comfortable-mexican-sofa.git
-  revision: c8d7f9d5fc43f7d583233d0b79b04421923fca70
+  revision: 6388a487dd95b9806c2fec679a83497a85a5d584
   specs:
     comfortable_mexican_sofa (2.0.0.beta3)
       active_link_to (>= 1.0.0)
