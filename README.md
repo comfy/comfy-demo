@@ -220,3 +220,10 @@ rails g comfy:scaffold Shoe name:string color:string
 
 You'll get models, migration, controllers, views, and also model and controller
 tests. Fill in the missing bits and you'll have fully functional admin section.
+
+### Step 11: Custom CMS Content Tag
+
+You can add your own CMS content tags. Here's an example of a simple one:
+/lib/cms_tags/lorem_picsum.rb
+
+For more inspiration check out existing [CMS content tags](https://github.com/comfy/comfortable-mexican-sofa/tree/master/lib/comfortable_mexican_sofa/content/tags)
