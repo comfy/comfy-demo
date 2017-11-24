@@ -17,7 +17,7 @@ module ComfyDemo
 
     # Ensuring that all engines and their routes get loaded before this app.
     # This is to prevent Comfy globbing route from killing appended routes.
-    config.railties_order = [:all, :main_app]
+    config.railties_order = [ActiveStorage::Engine, :main_app, :all]
 
     # Let's load our custom CMS content tags
     require_relative '../lib/cms_tags/lorem_picsum'
