@@ -60,8 +60,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "comfortable_mexican_sofa",
   github: "comfy/comfortable-mexican-sofa"
 gem "rails",
-  github: "GBH/rails",
-  branch: "active-storage-routes-prepend"
+  github: "rails/rails"
 gem "arel",
   github: "rails/arel"
 gem "bootstrap_form",
