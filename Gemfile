@@ -59,13 +59,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # ComfortableMexicanSofa Related gems -------------------------------------------
 gem "comfortable_mexican_sofa",
   github: "comfy/comfortable-mexican-sofa"
-gem "rails",
-  github: "rails/rails"
-gem "arel",
-  github: "rails/arel"
-gem "bootstrap_form",
-  github: "bootstrap-ruby/rails-bootstrap-forms",
-  branch: "bootstrap-v4"
+gem "comfy_blog",
+  github: "comfy/comfy-blog"
 gem "kaminari"
 
 group :test do

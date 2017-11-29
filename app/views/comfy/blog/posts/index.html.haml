@@ -1,0 +1,10 @@
+%h1 Blog Posts
+
+- @blog_posts.each do |post|
+
+  %h2
+    = link_to post.title, comfy_blog_post_path(@cms_site.path, post.year, post.month, post.slug)
+  .date
+    = post.published_at.to_s(:db)
+
+= comfy_paginate @posts
