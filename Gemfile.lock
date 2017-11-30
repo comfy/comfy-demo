@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/comfy/comfortable-mexican-sofa.git
-  revision: 3cac9f287c45d39c0956b7ad234c72508888f9ce
+  revision: 86f47576b9062270ec4a8d3bd6cc38dee17dd27e
   specs:
     comfortable_mexican_sofa (2.0.0.beta3)
       active_link_to (>= 1.0.0)
@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: https://github.com/comfy/comfy-blog.git
-  revision: 54e96d341d9ece7acb5b89f4a279ddfcf4083a8b
+  revision: 1178690fa609990ccfb8a2cb8d10ccec4a7d6683
   specs:
     comfy_blog (2.0.0.alpha)
 
@@ -152,7 +152,7 @@ GEM
       activerecord
       kaminari-core (= 1.1.1)
     kaminari-core (1.1.1)
-    kramdown (1.16.1)
+    kramdown (1.16.2)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)

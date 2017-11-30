@@ -1,8 +1,11 @@
-# Comfy Demo App [![Build Status](https://img.shields.io/travis/comfy/comfy-demo.svg?branch=master&style=flat)](https://travis-ci.org/comfy/comfy-demo)
+# Comfy Demo App
+
+[![Build Status](https://img.shields.io/travis/comfy/comfy-demo.svg?branch=master&style=flat)](https://travis-ci.org/comfy/comfy-demo)
 
 This is a simple demo app that has ComfortableMexicanSofa installed, configured
 and extended. You should be able to recreate everything by creating a fresh
 Rails app and following these steps.
+
 
 ### Step 1: Installation
 
@@ -227,3 +230,14 @@ You can add your own CMS content tags. Here's an example of a simple one:
 [lorem_picsum.rb](/lib/cms_tags/lorem_picsum.rb)
 
 For more inspiration check out existing [CMS content tags](https://github.com/comfy/comfortable-mexican-sofa/tree/master/lib/comfortable_mexican_sofa/content/tags)
+
+### Step 12: Comfy Blog
+
+There's a blog engine that you can just drop in along with CMS:
+[ComfyBlog](https://github.com/comfy/comfy-blog)
+Install it, restart app and you should be able to access it via http://localhost:3000/blog
+
+Blog posts behave similarly to CMS pages. You may want to override view template
+that is responsible for rendering /blog view. It was moved into /app/views/comfy/blog/posts
+Application layout that is used for that view can be changed via comfy_blog
+initializer. `config.app_layout = 'comfy/blog/application'`
