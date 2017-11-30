@@ -121,7 +121,8 @@ populate once and reuse everywhere. Good example would be copyright notice that
 needs to be at the bottom of all pages. Just create a *snippet* called "footer"
 and populate content with "&copy; Copyright 2017"
 
-**TODO** Update WIKI and link to documentation on all the tags
+See [WIKI](https://github.com/comfy/comfortable-mexican-sofa/wiki/Docs:-Content-Tags)
+for all available tags and how to use them.
 
 ### Step 7: Non-renderable Page Fragments and view helpers
 

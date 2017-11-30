@@ -1,31 +1,3 @@
-GIT
-  remote: https://github.com/comfy/comfortable-mexican-sofa.git
-  revision: 86f47576b9062270ec4a8d3bd6cc38dee17dd27e
-  specs:
-    comfortable_mexican_sofa (2.0.0.beta3)
-      active_link_to (>= 1.0.0)
-      bootstrap (>= 4.0.0.beta2.1)
-      codemirror-rails (>= 5.16.0)
-      coffee-rails (>= 4.2.0)
-      comfy_bootstrap_form (>= 4.0.0.beta1)
-      font-awesome-rails (>= 4.7.0)
-      haml-rails (>= 1.0.0)
-      jquery-rails (>= 4.3.1)
-      jquery-ui-rails (>= 6.0.1)
-      kramdown (>= 1.0.0)
-      mimemagic (>= 0.3.2)
-      mini_magick (>= 4.8.0)
-      plupload-rails (>= 1.2.1)
-      rails (>= 5.2.0.beta1)
-      rails-i18n (>= 5.0.0)
-      sass-rails (>= 5.0.0)
-
-GIT
-  remote: https://github.com/comfy/comfy-blog.git
-  revision: 1178690fa609990ccfb8a2cb8d10ccec4a7d6683
-  specs:
-    comfy_blog (2.0.0.alpha)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -104,6 +76,25 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
+    comfortable_mexican_sofa (2.0.0)
+      active_link_to (>= 1.0.0)
+      bootstrap (>= 4.0.0.beta2.1)
+      codemirror-rails (>= 5.16.0)
+      coffee-rails (>= 4.2.0)
+      comfy_bootstrap_form (>= 4.0.0.beta1)
+      font-awesome-rails (>= 4.7.0)
+      haml-rails (>= 1.0.0)
+      jquery-rails (>= 4.3.1)
+      jquery-ui-rails (>= 6.0.1)
+      kramdown (>= 1.0.0)
+      mimemagic (>= 0.3.2)
+      mini_magick (>= 4.8.0)
+      plupload-rails (>= 1.2.1)
+      rails (>= 5.2.0.beta1)
+      rails-i18n (>= 5.0.0)
+      sass-rails (>= 5.0.0)
+    comfy_blog (2.0.0)
+      comfortable_mexican_sofa (>= 2.0.0)
     comfy_bootstrap_form (4.0.0.beta1)
     concurrent-ruby (1.0.5)
     crass (1.0.3)
@@ -278,8 +269,8 @@ DEPENDENCIES
   byebug
   capybara (~> 2.15)
   coffee-rails (~> 4.2)
-  comfortable_mexican_sofa!
-  comfy_blog!
+  comfortable_mexican_sofa (>= 2.0.0)
+  comfy_blog (>= 2.0.0)
   jbuilder (~> 2.5)
   kaminari
   listen (>= 3.0.5, < 3.2)

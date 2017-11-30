@@ -57,10 +57,8 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # ComfortableMexicanSofa Related gems -------------------------------------------
-gem "comfortable_mexican_sofa",
-  github: "comfy/comfortable-mexican-sofa"
-gem "comfy_blog",
-  github: "comfy/comfy-blog"
+gem "comfortable_mexican_sofa", ">= 2.0.0"
+gem "comfy_blog",               ">= 2.0.0"
 gem "kaminari"
 
 group :test do
