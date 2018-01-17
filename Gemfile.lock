@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/comfy/comfortable-mexican-sofa.git
-  revision: e9553a4a150c7cd07ca92df2452be89416cca41f
+  revision: 65615e646cd8ddf8d5cc6e82e74cb4a6ea0ec8e9
   specs:
-    comfortable_mexican_sofa (2.0.7)
+    comfortable_mexican_sofa (2.0.8)
       active_link_to (>= 1.0.0)
       coffee-rails (>= 4.2.0)
       comfy_bootstrap_form (>= 4.0.0.beta1)
@@ -17,7 +17,7 @@ GIT
 
 GIT
   remote: https://github.com/comfy/comfy-blog.git
-  revision: ecafe8300c81334521c8eb30b41c8c29c5ea8cd6
+  revision: 1e274e1683648091ea90e0e667ffa457723f0bd5
   specs:
     comfy_blog (2.0.4)
       comfortable_mexican_sofa (>= 2.0.4)
@@ -152,8 +152,8 @@ GEM
     mini_mime (1.0.0)
     mini_portile2 (2.3.0)
     minitest (5.11.1)
-    msgpack (1.2.0)
-    multi_json (1.12.2)
+    msgpack (1.2.2)
+    multi_json (1.13.1)
     nio4r (2.2.0)
     nokogiri (1.8.1)
       mini_portile2 (~> 2.3.0)
@@ -233,9 +233,9 @@ GEM
     thor (0.20.0)
     thread_safe (0.3.6)
     tilt (2.0.8)
-    turbolinks (5.0.1)
-      turbolinks-source (~> 5)
-    turbolinks-source (5.0.3)
+    turbolinks (5.1.0)
+      turbolinks-source (~> 5.1)
+    turbolinks-source (5.1.0)
     tzinfo (1.2.4)
       thread_safe (~> 0.1)
     uglifier (4.1.3)
@@ -277,4 +277,4 @@ DEPENDENCIES
   web-console (>= 3.3.0)
 
 BUNDLED WITH
-   1.16.0
+   1.16.1
