@@ -1,5 +1,5 @@
 .page-header
   %h2 Edit Shoe
 
-= comfy_form_for [:admin, @shoe] do |form|
+= comfy_form_with model: @shoe, url: [:admin, @shoe] do |form|
   = render form
