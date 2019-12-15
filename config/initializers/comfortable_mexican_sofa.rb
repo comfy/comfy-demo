@@ -1,11 +1,17 @@
-# encoding: utf-8
+# frozen_string_literal: true
+
+# Let's load our custom CMS content tags
+require_relative '../../lib/cms_tags/lorem_picsum'
 
 ComfortableMexicanSofa.configure do |config|
   # Title of the admin area
   #   config.cms_title = 'ComfortableMexicanSofa CMS Engine'
 
   # Controller that is inherited from CmsAdmin::BaseController
-  #   config.base_controller = 'ApplicationController'
+  #   config.admin_base_controller = 'ApplicationController'
+
+  # Controller that Comfy::Cms::BaseController will inherit from
+  #   config.public_base_controller = 'ApplicationController'
 
   # Module responsible for authentication. You can replace it with your own.
   # It simply needs to have #authenticate method. See http_auth.rb for reference.
@@ -37,18 +43,6 @@ ComfortableMexicanSofa.configure do |config|
 
   # Path where seeds can be located.
   #   config.seeds_path = File.expand_path('db/cms_seeds', Rails.root)
-
-  # Importing fixtures into Database
-  # To load fixtures into the database just run this rake task:
-  #   local: $ rake comfortable_mexican_sofa:fixtures:import FROM=example.local TO=localhost
-  #   Heroku: $ heroku run rake comfortable_mexican_sofa:fixtures:import FROM=example.local TO=yourapp.herokuapp.com
-  # From indicates folder the fixtures are in and to is the Site hostname you have defined in the database.
-
-  # Exporting fixtures into Files
-  # If you need to dump database contents into fixture files run:
-  #   local: $ rake comfortable_mexican_sofa:fixtures:export FROM=localhost TO=example.local
-  #   Heroku: $ heroku run rake comfortable_mexican_sofa:fixtures:export FROM=yourapp.herokuapp.com TO=example.local
-  # This will create example.local folder and dump all content from example.com Site.
 
   # Content for Layouts, Pages and Snippets has a revision history. You can revert
   # a previous version using this system. You can control how many revisions per
@@ -89,13 +83,18 @@ ComfortableMexicanSofa.configure do |config|
   # Reveal partials that can be overwritten in the admin area.
   # Default is false.
   #   config.reveal_cms_partials = false
-
+  #
+  # Customize the returned content json data
+  # include fragments in content json
+  #   config.content_json_options = {
+  #     include: [:fragments]
+  #   }
 end
 
 # Default credentials for ComfortableMexicanSofa::AccessControl::AdminAuthentication
 # YOU REALLY WANT TO CHANGE THIS BEFORE PUTTING YOUR SITE LIVE
-ComfortableMexicanSofa::AccessControl::AdminAuthentication.username = 'username'
-ComfortableMexicanSofa::AccessControl::AdminAuthentication.password = 'password'
+ComfortableMexicanSofa::AccessControl::AdminAuthentication.username = "username"
+ComfortableMexicanSofa::AccessControl::AdminAuthentication.password = "password"
 
 # Uncomment this module and `config.admin_auth` above to use custom admin authentication
 # module ComfyAdminAuthentication

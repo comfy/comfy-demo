@@ -7,7 +7,8 @@ class Admin::ShoesControllerTest < ActionDispatch::IntegrationTest
   end
 
   # Vanilla CMS has BasicAuth, so we need to send that with each request.
-  # Change this to fit your app's authentication strategy
+  # Change this to fit your app's authentication strategy.
+  # Move this to test_helper.rb
   def r(verb, path, options = {})
     headers = options[:headers] || {}
     headers['HTTP_AUTHORIZATION'] =

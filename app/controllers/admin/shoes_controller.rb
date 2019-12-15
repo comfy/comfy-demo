@@ -29,7 +29,7 @@ class Admin::ShoesController < Comfy::Admin::BaseController
   end
 
   def update
-    @shoe.update_attributes!(shoe_params)
+    @shoe.update!(shoe_params)
     flash[:success] = 'Shoe updated'
     redirect_to action: :show, id: @shoe
   rescue ActiveRecord::RecordInvalid

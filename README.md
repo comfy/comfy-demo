@@ -11,6 +11,8 @@ Rails app and following these steps.
 
 * Add required gems to [Gemfile](https://github.com/comfy/comfy-demo/blob/master/Gemfile#L59)
 * Run `rails active_storage:install` to pull in ActiveStorage migration
+* Run `rails action_text:install` to install ActiveText stuff
+* Run `rails webpacker:install` to install Webpack stuff
 * Run `rails g comfy:cms` to pull in CMS migration, routes and initializer
 * Run migrations: `rake db:migrate`
 * Start the server: `rails s`

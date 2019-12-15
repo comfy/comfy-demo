@@ -11,7 +11,7 @@ class ShoeTest < ActiveSupport::TestCase
   def test_validation
     shoe = Shoe.new
     assert shoe.invalid?
-    assert_equal [:name], shoe.errors.keys
+    assert_equal [:name, :color], shoe.errors.keys
   end
 
   def test_creation
